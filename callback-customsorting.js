@@ -20,9 +20,7 @@ students.sort(function(a, b) {
     return 1;
   }
   if (a.name === b.name) {
-    return students.sort(function(a, b) {
-      return a - b;
-    });
+      return b.age - a.age;
   }
   return 0;
 });
